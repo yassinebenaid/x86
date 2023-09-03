@@ -1,5 +1,5 @@
 section .data
-    greeting db "Hi mr. : " 
+    greeting db "Hi mr. : "
     name db "yassinebenaid" ; my beautifull name
 
 section .text
