@@ -6,8 +6,8 @@ each file represent one topic , shows the instructions needed to represent it in
 ## prerequesties
 as descibed earlier , this project is for educational purposes , but if you're intersted and want to pull it to your local , here are some cautions :
 - this is `x86` , so you probably know that it runs on linux , and it should be 64 bits :)
-- you need and assemmbler , literally `nasm` , the instuctions do differ from an assembler to another , `sudo apt update && sudo apt install nasm`
-- and ofcourse a linker to lik the objects , I use `ld` , you should have already installed on linux , but you can still get it by `sudo apt install binutils`
+- you need and assembler , literally `nasm` , the instuctions do differ from an assembler to another , `sudo apt update && sudo apt install nasm` will get it 
+- and ofcourse a linker to lnik the objects , I use `ld` , you should have it already installed on linux , but you can still get it by `sudo apt install binutils`
 
 
 ## usage
