@@ -11,12 +11,10 @@ section .text
     global _start
 
 _start:
-    mov rax, value   
-    cmp rax, value
-    je .success
-    jne .failed
-
-    call .exit
+   mov rax, 5
+   cmp rax, value
+   je .success
+   jne .failed
 
 .success:
     mov rax, 1
@@ -24,17 +22,14 @@ _start:
     mov rsi, success
     mov rdx, success_len
     syscall
-
-    call .exit
+ 
 
 .failed:
     mov rax, 1
     mov rdi, 1
     mov rsi, failed
     mov rdx, failed_len
-    syscall
-
-    call .exit
+    syscall 
 
 .exit:
     mov rax, 60
