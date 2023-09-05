@@ -13,15 +13,16 @@ _start:
 
   
 .try:
+    cmp rbx, goal
+    je .exit
+
     mov rax, 1
     mov rdi, 1
     mov rsi, trying
     mov rdx, tlen
     syscall
     
-    cmp rbx, goal
-    je .exit
-    call .increment
+    jmp .increment
 
 .increment:
     add rbx, 1
@@ -33,7 +34,7 @@ _start:
     mov rsi, reached
     mov rdx, rlen 
     syscall
-    
+
     mov rax, 60
     mov edi, 0
     syscall
